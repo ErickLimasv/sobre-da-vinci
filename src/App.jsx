@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Section from "./components/Section/Section";
 import Footer from "./components/Footer/Footer";
+import { PiPaintBrush, PiInfo, PiLightbulb } from "react-icons/pi";
 
 import "./App.css"
 
@@ -93,6 +94,36 @@ export default function App() {
     },
   ]
 
+  const invencoes = [
+    {
+      id: 0,
+      img: {
+        src: "/images/asas.png",
+        alt: "Pintura 'Dama com Arminho'."
+      },
+      title: "Asas",
+      text: "Leonardo Da Vinci não foi capaz de reproduzir o movimento dos pássaros em seus projetos, entretanto, a observação dos animais trouxe conceitos importantes para a aerodinâmica que ajudariam na criação do avião muitos séculos depois.",
+    },
+    {
+      id: 1,
+      img: {
+        src: "/images/paraquedas.png",
+        alt: "Pintura 'Monalisa'."
+      },
+      title: "Paraquedas",
+      text: "O equipamento é semelhante ao paraquedas atual, entretanto, ele possui um formato de pirâmide. A ideia foi aprimorada e ganhou grande utilidade séculos depois, principalmente a partir da Segunda Guerra Mundial.",
+    },
+    {
+      id: 2,
+      img: {
+        src: "/images/tanque.png",
+        alt: "Pintura 'A Última Ceia'."
+      },
+      title: "Tanque",
+      text: "O tanque de Leonardo Da Vinci seria um veículo de guerra equipado com canhões que atingiam um ângulo de 360°. A cobertura convexa tinha como finalidade desviar do fogo inimigo. O veículo tinha capacidade para oito pessoas.",
+    },
+  ]
+
   return (
     <>
       <header>
@@ -106,16 +137,20 @@ export default function App() {
           id="curiosidades"
           title="curiosidades"
           content={curiosidades}
+          icon={<PiInfo/>}
         />
         <Section
           id="pinturas"
           title="pinturas"
           content={pinturas}
+          icon={<PiPaintBrush/>}
         />
         <Section
           id="invencoes"
           title="invenções"
-          content={[]}
+          content={invencoes}
+          icon={<PiLightbulb/>}
+          png
         />
       </main>
       <Footer/>

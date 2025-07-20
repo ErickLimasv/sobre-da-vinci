@@ -1,9 +1,9 @@
 import "./Card.css"
 
-export default function Card({content}) {
+export default function Card({content, png}) {
     return (
         <article className="card">
-            <div className="card-image">
+            <div className={`card-image ${png && "png"}`}>
                 <img src={content.img.src} alt={content.img.alt} />
             </div>
 

@@ -30,6 +30,16 @@
     background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,.4));
 }
 
+.card-image.png img {
+    object-fit: contain;
+    z-index: 1;
+}
+
+.card-image.png {
+    background-image: none;
+    box-shadow: none;
+}
+
 .card-image img {
     z-index: -1;
     position: absolute;
