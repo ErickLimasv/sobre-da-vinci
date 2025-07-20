@@ -1,0 +1,31 @@
+.banner {
+    min-height: 640px;
+    width: 100%;
+    padding: 48px 64px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-image: radial-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url("../../../public/images/a-ultima-ceia.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--cor-principal);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.banner-text {
+    max-width: 480px;
+}
+
+.banner-text h1 {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 16px 24px;
+    }
+}
