@@ -124,13 +124,15 @@ export default function App() {
     },
   ]
 
-  return (
+  return (   
     <>
       <header>
         <Navbar/>
 
         <Banner/>
       </header>
+      
+      
 
       <main>
         <Section
