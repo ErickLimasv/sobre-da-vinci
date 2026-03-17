@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sobre-da-vinci/static/css/main.fb1e6bb3.css",
+    "main.js": "/sobre-da-vinci/static/js/main.69308e10.js",
+    "static/media/a-ultima-ceia.jpg": "/sobre-da-vinci/static/media/a-ultima-ceia.5fb62930f198f2a61645.jpg",
+    "index.html": "/sobre-da-vinci/index.html",
+    "main.fb1e6bb3.css.map": "/sobre-da-vinci/static/css/main.fb1e6bb3.css.map",
+    "main.69308e10.js.map": "/sobre-da-vinci/static/js/main.69308e10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb1e6bb3.css",
+    "static/js/main.69308e10.js"
+  ]
+}
